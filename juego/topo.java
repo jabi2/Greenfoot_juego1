@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class topo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Codigo para el control del primer jugador
+ *
+ *  Utilizar las flechas y el espacio para controlar la pelota dorada y apachar hormigas.
+ *
  */
 public class topo extends Actor
 {
@@ -17,17 +17,17 @@ public class topo extends Actor
         moveAndTurn();
         eat();
     }
-    
+
     public void moveAndTurn()
     {
         setImage("gold-ball.png");
-        
+
         int a;
         a = getX();
-        
+
         int b;
         b = getY();
-        
+
         if (Greenfoot.isKeyDown("up"))
         {
             setLocation(a,b-1);
@@ -36,36 +36,36 @@ public class topo extends Actor
         if (Greenfoot.isKeyDown("left"))
         {
             setLocation(a-1,b);
-            
+
         }
-        
+
         if (Greenfoot.isKeyDown("right"))
         {
             setLocation(a+1,b);
         }
-        
+
         if (Greenfoot.isKeyDown("down"))
         {
             setLocation(a,b+1);
         }
     }
-    
+
     public void eat()
     {
         Actor worm;
         worm = getOneObjectAtOffset(0, 0, Worm.class);
-        
-    
+
+
         //imagen = getImage()
         if (worm != null)
             if (Greenfoot.isKeyDown("space"))
             {
                 setImage("red-draught.png");
-            
-            
+
+
                 World world;
                 world = getWorld();
                 world.removeObject(worm);
             }// Add your action code here.
-    }   
+    }
 }
