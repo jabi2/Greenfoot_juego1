@@ -17,7 +17,7 @@ public class topo extends Actor
         moveAndTurn();
         eat();
     }
-
+    public static int score= 0;
     public void moveAndTurn()
     {
         setImage("gold-ball.png");
@@ -31,7 +31,6 @@ public class topo extends Actor
         if (Greenfoot.isKeyDown("up"))
         {
             setLocation(a,b-1);
-            //move (1);
         }
         if (Greenfoot.isKeyDown("left"))
         {
@@ -55,8 +54,6 @@ public class topo extends Actor
         Actor worm;
         worm = getOneObjectAtOffset(0, 0, Worm.class);
 
-
-        //imagen = getImage()
         if (worm != null)
             if (Greenfoot.isKeyDown("space"))
             {
@@ -66,6 +63,19 @@ public class topo extends Actor
                 World world;
                 world = getWorld();
                 world.removeObject(worm);
-            }// Add your action code here.
+                Greenfoot.playSound("Splat.mp3");
+                score++;
+            }
+    }
+    public void morir()
+    {
+        if (score >= 10)
+        {
+            Actor topo;
+            topo = getOneObjectAtOffset(0, 0, topo2.class);
+            World world;
+            world = getWorld();
+            world.removeObject(topo);
+        }
     }
 }

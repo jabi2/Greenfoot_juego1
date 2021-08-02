@@ -17,7 +17,7 @@ public class topo2 extends Actor
         moveAndTurn2();
         eat2();
     }
-
+    public static int score= 0;
     public void moveAndTurn2()
     {
         setImage("steel-ball.png");
@@ -66,6 +66,8 @@ public class topo2 extends Actor
                 World world;
                 world = getWorld();
                 world.removeObject(worm);
+                Greenfoot.playSound("Splat.mp3");
+                score++;
             }// Add your action code here.
     }
 }

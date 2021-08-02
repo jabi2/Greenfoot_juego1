@@ -1,17 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Worm here.
+ * Write a description of class end here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Worm extends Actor
+public class end extends Actor
 {
     /**
-     * Act - do whatever the Worm wants to do. This method is called whenever
+     * Act - do whatever the end wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
 }
-

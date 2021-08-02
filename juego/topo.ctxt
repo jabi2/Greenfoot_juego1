@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=topo
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ topo\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Codigo\ para\ el\ control\ del\ primer\ jugador\r\n\r\n\ \ Utilizar\ las\ flechas\ y\ el\ espacio\ para\ controlar\ la\ pelota\ dorada\ y\ apachar\ hormigas.\r\n\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ topo\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
@@ -8,4 +8,6 @@ comment2.params=
 comment2.target=void\ moveAndTurn()
 comment3.params=
 comment3.target=void\ eat()
-numComments=4
+comment4.params=
+comment4.target=void\ morir()
+numComments=5
